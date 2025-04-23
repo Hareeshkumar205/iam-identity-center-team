@@ -20,7 +20,7 @@ TEAM_ACCOUNT_PROFILE=aws-team
 TEAM_ADMIN_GROUP=TEAM_ADMIN
 TEAM_AUDITOR_GROUP=TEAM_AUDITOR
 TAGS="project=iam-identity-center-team environment=prod"
-CLOUDTRAIL_AUDIT_LOGS=arn:aws:cloudtrail:us-east-1:918362934147:eventdatastore/aca9a91c-9586-47eb-afdc-cbf21a1b6d6c
+CLOUDTRAIL_AUDIT_LOGS=arn:aws:cloudtrail:us-east-1:864899847564:eventdatastore/73479233-9d41-424f-bce6-5befa72f84e0
 SECRET_NAME=prod/aws/team
 
 # Uncomment the next line only if you have a custom domain
