@@ -24,7 +24,7 @@ import {
   getMgmtAccountPs,
   fetchPolicy,
 } from "../Shared/RequestService";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { API, graphqlOperation } from "aws-amplify";
 import { onPublishPolicy } from "../../graphql/subscriptions";
 import params from "../../parameters.json";
@@ -66,7 +66,7 @@ function Request(props) {
   const [ticketRequired, setTicketRequired] = useState(true);
   const [approvalRequired, setApprovalRequired] = useState(true);
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function concatenateAccounts(data) {
     let allAccounts = data.map((item) => item.accounts);
