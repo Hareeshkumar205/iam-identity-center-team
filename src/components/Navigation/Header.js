@@ -9,10 +9,10 @@ import "../../index.css";
 import params from "../../parameters.json";
 import { Auth } from "aws-amplify";
 import TopNavigation from "@awsui/components-react/top-navigation";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Header(props) {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
 
   async function signOut() {
