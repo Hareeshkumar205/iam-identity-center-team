@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import AppLayout from "@awsui/components-react/app-layout";
 import Navigation from "./Navigation";
 import ToolsDrawer from "./ToolsDrawer";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Flashbar from "@awsui/components-react/flashbar";
 import Request from "../Requests/Request";
 import Approvals from "../Approvals/Approvals";
@@ -77,7 +77,7 @@ function Nav(props) {
             }
             tools={<ToolsDrawer></ToolsDrawer>}
             content={
-              <Switch>
+              <Routes>
                 <Route
                   path="/"
                   exact={true}
@@ -184,7 +184,7 @@ function Nav(props) {
                     />
                   </Route>
                 ) : null}
-              </Switch>
+              </Routes>
             }
           />
         </BrowserRouter>
