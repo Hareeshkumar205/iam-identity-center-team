@@ -25,7 +25,7 @@ import {
   onCreateRequests,
 } from "../../graphql/subscriptions";
 import { updateStatus, sessions, getRequest, getSetting } from "../Shared/RequestService";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Status from "../Shared/Status";
 import "../../index.css";
 
@@ -211,7 +211,7 @@ function Approvals(props) {
   });
 
   const { selectedItems } = collectionProps;
-  const history = useHistory();
+  const navigate = useNavigate();
   const [confirmLoading, setConfirmLoading] = useState(false);
   const [refreshLoading, setRefreshLoading] = useState(false);
   const [tableLoading, setTableLoading] = useState(true);
