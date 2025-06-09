@@ -9,13 +9,13 @@ import "antd/dist/antd.css";
 import { Menu, Dropdown, Typography } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import { Auth } from "aws-amplify";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const { Text } = Typography;
 
 function Logout(props) {
   const user = props.user;
-  const history = useHistory();
+  const navigate = useNavigate();
   const menu = (
     <Menu>
       <Menu.Item>
