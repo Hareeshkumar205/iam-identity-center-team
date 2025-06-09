@@ -4,7 +4,7 @@
 // Amazon Web Services, Inc. or Amazon Web Services EMEA SARL or both.
 import { React, useState } from "react";
 import Box from "@awsui/components-react/box";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Button from "@awsui/components-react/button";
 import ColumnLayout from "@awsui/components-react/column-layout";
 import Container from "@awsui/components-react/container";
@@ -22,7 +22,7 @@ const selections = [
 ];
 
 function Landing(props) {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [selectedOption, setSelectedOption] = useState(selections[0]);
   return (
     <Box margin={{ bottom: "l" }}>
