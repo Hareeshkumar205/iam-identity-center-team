@@ -5,10 +5,10 @@
 import * as React from "react";
 import SideNavigation from "@awsui/components-react/side-navigation";
 import Icon from "@awsui/components-react/icon";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navigation(props) {
-  const history = useHistory();
+  const navigate = useNavigate();
   return (
     <SideNavigation
       activeHref={props.active}
