@@ -17,8 +17,8 @@ REGION=us-east-1
 TEAM_ACCOUNT=331799637155
 ORG_MASTER_PROFILE=acs-org-master
 TEAM_ACCOUNT_PROFILE=acs-aws-team
-TEAM_ADMIN_GROUP=ACS-COPS  
-TEAM_AUDITOR_GROUP=ACS-COPS
+TEAM_ADMIN_GROUP=ACS_COPS  
+TEAM_AUDITOR_GROUP=ACS_COPS
 TAGS="project=iam-identity-center-team environment=prod"
 CLOUDTRAIL_AUDIT_LOGS=arn:aws:cloudtrail:us-east-1:331799637155:eventdatastore/584fcc43-a652-489c-829e-6ca76915270f
 SECRET_NAME=prod/acs-aws-team
