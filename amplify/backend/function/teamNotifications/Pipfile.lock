@@ -57,9 +57,6 @@
             "markers": "python_version >= '3.7'",
             "version": "==0.6.2"
         },
-        "sanitized-package": {
-            "version": "==0.0.1"
-        },
         "six": {
             "hashes": [
                 "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
