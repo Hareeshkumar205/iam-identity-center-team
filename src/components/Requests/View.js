@@ -22,7 +22,7 @@ import { onUpdateRequests, onCreateRequests} from "../../graphql/subscriptions";
 import Status from "../Shared/Status";
 import Details from "../Shared/Details";
 import "../../index.css";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function convertAwsDateTime(awsDateTime) {
   // Parse AWS datetime string into a Date object
@@ -267,7 +267,7 @@ function View(props) {
   const [refreshLoading, setRefreshLoading] = useState(false);
   const [expand, setExpand] = useState(false);
   const [expiry, setExpiry] = useState(3)
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     views();
