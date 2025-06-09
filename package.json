@@ -64,7 +64,8 @@
   "license": "ISC",
   "devDependencies": {
     "@svgr/webpack": "^7.0.0",
-    "json-loader": "^0.5.7"
+    "json-loader": "^0.5.7",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "overrides": {
     "@svgr/webpack": "^7.0.0",
