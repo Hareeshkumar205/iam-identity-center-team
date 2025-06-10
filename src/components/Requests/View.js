@@ -330,7 +330,7 @@ function View(props) {
   }
 
   function handleCreate() {
-    history.push("/requests/request");
+    navigate("/requests/request");
     props.setActiveHref("/requests/request");
   }
 
