@@ -195,13 +195,13 @@ function Request(props) {
           onDismiss: () => props.addNotification([]),
         },
       ]);
-      history.push("/requests/view");
+      navigate("/requests/view");
       props.setActiveHref("/requests/view");
     });
   }
 
   function handleCancel() {
-    history.push("/");
+    navigate("/");
     props.setActiveHref("/");
     props.addNotification([]);
   }
