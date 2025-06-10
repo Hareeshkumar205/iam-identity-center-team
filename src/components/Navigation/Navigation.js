@@ -75,7 +75,7 @@ function Navigation(props) {
         if (!event.detail.external) {
           event.preventDefault();
           props.setActiveHref(event.detail.href);
-          history.push(event.detail.href);
+          navigate(event.detail.href);
         }
       }}
     />
