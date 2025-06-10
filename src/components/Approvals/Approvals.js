@@ -278,7 +278,7 @@ function Approvals(props) {
   }
 
   function handleView() {
-    history.push("/sessions/active");
+    navigate("/sessions/active");
     props.setActiveHref("/sessions/active");
   }
 
