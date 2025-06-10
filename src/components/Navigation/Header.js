@@ -78,7 +78,7 @@ function Header(props) {
             iconName: "user-profile",
             onItemClick: ({ detail }) => {
               if (detail.id === "signout") {
-                signOut().then(() => history.push("/"));
+                signOut().then(() => navigate("/"));
               }
             },
             items: [
@@ -115,7 +115,7 @@ function Header(props) {
           },
         ]}
         onFollow={() => {
-          history.push("/");
+          navigate("/");
           props.setActiveHref("/");
           props.addNotification([]);
         }}
