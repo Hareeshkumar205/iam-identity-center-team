@@ -97,9 +97,9 @@ function Landing(props) {
                     variant="primary"
                     onClick={() => {
                       if (selectedOption.id === "1") {
-                        history.push("/requests/request");
+                        navigate("/requests/request");
                       } else if (selectedOption.id === "2") {
-                        history.push("/approvals/approve");
+                        navigate("/approvals/approve");
                       }
                       props.setActiveHref("/sessions/active")
                     }}
